@@ -1,7 +1,30 @@
 
+:root {
+    --about-primary-color: #005aba;
+    --about-secondary-color: #f3f2dd;
+    --projects-primary-color: #4a3491;
+    --projects-secondary-color: #f2fdff;
+    --contact-primary-color: #00612a;
+    --contact-secondary-color: #fdfdef;
+}
+#email {
+    font-size: 35px;
+    font-weight: 700;
+    transition: all 150ms ease-in-out;
+}
+
+#email:hover {
+    opacity: 0.7;
+}
+
 body {
     display: flex;
     justify-content: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
 }
 
 h1 {
@@ -27,6 +50,85 @@ h2 {
     margin-top: 10px;
 }
 
+
+.about-body {
+    background-color: var(--about-secondary-color);
+    color: var(--about-primary-color)
+}
+
+.about-theme {
+    color: var(--about-primary-color);
+}
+
+.about-me-section {
+    margin: 0 auto;
+    max-width: 80%;
+    
+}
+
+.projects-theme {
+    color: var(--projects-primary-color);
+}
+
+.projects-theme-bg {
+    background-color: var(--projects-secondary-color);
+}
+
+.contact-theme-bg {
+    background-color: var(--contact-secondary-color);
+}
+
+.contact-theme {
+    color: var(--contact-primary-color);
+}
+
+.contact-section {
+    color: var(--contact-primary-color);
+    margin-top: 40px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 200;
+}
+
+
+
+.selfie {
+    width: 300px;
+    margin-top: 50px;
+    border-radius: 30px;
+    margin-bottom: 30px;
+}
+
+p {
+    display: block;
+    margin: 50px auto;
+    width: 300px;
+    text-align: end;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+   
+}
+
+p .emphasis {
+    
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.home-navigation {
+    margin: 30px;
+    text-align: center;
+    transition: all 150ms ease-in-out;
+}
+
+.home-navigation:hover {
+    opacity: 0.7;
+}
+
+.home-icon {
+    font-size: 17px;
+}
+
 .navigation-links {
     margin-top: 60px;
     text-align: center;
@@ -42,12 +144,12 @@ h2 {
     font-size: 100px;
     font-weight: 100;
     line-height: 70px;
-    text-transform: uppercase;
+    text-transform: lowercase;
 }
 
 .top {
-    transform: translateX(-50px);
-    transition: all 200ms ease-in-out;
+    transform: translateX(-120px);
+    transition: all 100ms ease-in-out;
 }
 
 .top:hover {
@@ -57,7 +159,7 @@ h2 {
 
 .middle {
     transform: translateX(130px);
-    transition: all 200ms ease-in-out;
+    transition: all 100ms ease-in-out;
 }
 
 .middle:hover {
@@ -68,7 +170,7 @@ h2 {
 .bottom {
     font-style: italic;
     transform: translateX(25px);
-    transition: all 200ms ease-in-out;
+    transition: all 100ms ease-in-out;
 }
 
 .bottom:hover {
@@ -80,26 +182,35 @@ h2 {
     font-size: 30px;
     text-align: center;
     line-height: 2;
+    transition: all 200ms ease-in-out;
 }
 
 .social-icon a {
     text-decoration: none;
-    color: #373737;
     margin: 20px;
+    
 }
+
+.social-icon:hover {
+    opacity: 0.7;
+}
+
 
 @media (max-width: 768px) {
     h1 {
-        font-size: 40px;
+        font-size: 30px;
         line-height: 1;
     }
     h1 strong {
-        font-size: 50px;
+        font-size: 35px;
     }
     h2 {
-        font-size: 25px;
+        font-size: 15px;
     }
     
+    p {
+        font-size: 14px;
+    }
     .link {
         font-size: 70px;
         line-height: 0.7;

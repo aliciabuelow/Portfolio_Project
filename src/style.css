@@ -1,11 +1,11 @@
 
 :root {
-    --about-primary-color: #005aba;
-    --about-secondary-color: #f3f2dd;
+    --about-primary-color: #016ee2;
+    --about-secondary-color: #fffdf3;
     --projects-primary-color: #4a3491;
     --projects-secondary-color: #f2fdff;
-    --contact-primary-color: #00612a;
-    --contact-secondary-color: #fdfdef;
+    --contact-primary-color: #c90505;
+    --contact-secondary-color: #fef9fc;
 }
 #email {
     font-size: 35px;
@@ -20,10 +20,12 @@
 body {
     display: flex;
     justify-content: center;
+    max-width: 95%;;
 }
 
 a {
     text-decoration: none;
+    cursor: crosshair;
     color: black;
 }
 
@@ -34,6 +36,7 @@ h1 {
     font-size: 75px;
     text-align: center;
     line-height: 70px;
+    overflow: hidden;
 }
 
 h1 strong {
@@ -46,10 +49,44 @@ h2 {
     text-align: center;
     font-family: 'Inter', sans-serif;
     font-weight: 200;
-    font-size: 30px;
+    font-size: 20px;
     margin-top: 10px;
 }
 
+p {
+    display: block;
+    margin: 50px auto;
+    width: 300px;
+    text-align: end;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+   
+}
+
+.masked-text {
+    margin: 0 auto;
+    font-size: 85px;
+    font-weight: 700;
+    font-style: italic;
+    line-height: 0.8;
+    color: transparent;
+    background-image: url('https://images.unsplash.com/photo-1714548213572-7943d5fd3528?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: 200%;
+    background-position: 0 50%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate-background 5s infinite alternate linear;
+}
+
+@keyframes animate-background {
+    0% {
+        background-position: 0 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+    }
 
 .about-body {
     background-color: var(--about-secondary-color);
@@ -62,6 +99,7 @@ h2 {
 
 .about-me-section {
     margin: 0 auto;
+    padding-bottom: 30px;
     max-width: 80%;
     
 }
@@ -99,16 +137,6 @@ h2 {
     margin-bottom: 30px;
 }
 
-p {
-    display: block;
-    margin: 50px auto;
-    width: 300px;
-    text-align: end;
-    font-family: 'Inter', sans-serif;
-    font-size: 16px;
-   
-}
-
 p .emphasis {
     
     font-size: 15px;
@@ -144,7 +172,8 @@ p .emphasis {
     font-size: 100px;
     font-weight: 100;
     line-height: 70px;
-    text-transform: lowercase;
+    text-transform: uppercase;
+    cursor: crosshair;
 }
 
 .top {
@@ -153,7 +182,7 @@ p .emphasis {
 }
 
 .top:hover {
-    opacity: 0.4;
+    letter-spacing: 5px;
     font-style: italic;
 }
 
@@ -163,7 +192,7 @@ p .emphasis {
 }
 
 .middle:hover {
-    opacity: 0.4;
+    letter-spacing: 5px;
     font-style: italic;
 }
 
@@ -174,7 +203,7 @@ p .emphasis {
 }
 
 .bottom:hover {
-    opacity: 0.4;
+    letter-spacing: 5px;
     font-style: normal;
 }
 
@@ -208,9 +237,6 @@ p .emphasis {
         font-size: 15px;
     }
     
-    p {
-        font-size: 14px;
-    }
     .link {
         font-size: 70px;
         line-height: 0.7;
@@ -220,5 +246,19 @@ p .emphasis {
     }
     .middle {
         transform: none;
+    }
+    .masked-text {
+        font-size: 60px;
+    }
+
+    #email {
+        font-size: 25px;
+    }
+    p {
+        text-align: center;
+        font-size: 12px
+    }
+    p .emphasis {
+        font-size: 12px;
     }
 }

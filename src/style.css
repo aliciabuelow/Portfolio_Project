@@ -250,11 +250,19 @@ p .emphasis {
     .masked-text {
         font-size: 60px;
     }
+    
+    .selfie {
+        position: relative;
+        left: 10px;
+        margin: 0 auto;
+        margin-bottom: 40px;
+    }
 
     #email {
         font-size: 25px;
     }
     p {
+        margin: 0 auto 20px auto;
         text-align: center;
         font-size: 12px
     }

@@ -1,18 +1,20 @@
 
 :root {
     --about-primary-color: #0264cc;
-    --about-secondary-color: #fffdf3;
+    --about-secondary-color: #f7f4e3;
     --about-accent-color: #d8156a;
     --projects-primary-color: #4a3491;
     --projects-secondary-color: #def1f4;
     --projects-accent-color: #20b2b7;
     --contact-primary-color: #c90505;
-    --contact-secondary-color: #fef9fc;
+    --contact-secondary-color: #f7e2ee;
     --contact-accent-color: #fa9508;
 }
 
 body {
-    max-width: 95%;;
+    width: 100%;
+    margin: 0;
+    padding: 0px;
 }
 
 a {
@@ -31,7 +33,7 @@ h1 {
     overflow: hidden;
 }
 
-h1 strong {
+strong {
     font-weight: 700;
     font-style: italic;
     font-size: 80px;
@@ -80,6 +82,28 @@ p {
     }
     }
 
+#about {
+    margin: 400px 0;
+    width: 100%;
+}
+
+.about-parent {
+    border-radius: 30px;
+    padding: 20px;
+    margin-top: 0;
+}
+.about-title {
+    position: relative;
+    top: 26px;
+    left: 50px;
+}
+
+.about-me-section {
+    margin: 0 auto;
+    padding-bottom: 30px;
+    
+}
+
 .about-theme-bg {
     background-color: var(--about-secondary-color);
     color: var(--about-primary-color)
@@ -89,11 +113,21 @@ p {
     color: var(--about-primary-color);
 }
 
-.about-me-section {
-    margin: 0 auto;
-    padding-bottom: 30px;
-    max-width: 80%;
-    
+#projects {
+    margin: 0 0 400px 0;
+    width: 100%;
+}
+
+.projects-parent {
+    border-radius: 30px;
+    padding: 20px;
+    margin-top: 0;
+}
+
+.projects-title {
+    position: relative;
+    top: 26px;
+    left: 50px;
 }
 
 .projects-theme {
@@ -102,6 +136,25 @@ p {
 
 .projects-theme-bg {
     background-color: var(--projects-secondary-color);
+}
+
+#contact {
+    margin: 0 0 200px 0;
+    width: 100%;
+}
+
+.contact-parent {
+    width: 550px;
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+.contact-title {
+    position: relative;
+    text-align: center;
+    top: 26px;
 }
 
 .contact-theme-bg {
@@ -125,9 +178,8 @@ p {
     font-style: italic;
 }
 
-.contact-section {
+.contact-paragraph {
     color: var(--contact-primary-color);
-    margin-top: 40px;
     text-align: center;
     font-size: 25px;
     font-weight: 200;
@@ -151,7 +203,7 @@ p {
 
 .selfie {
     width: 300px;
-    margin-top: 50px;
+    margin-top: 80px;
     border-radius: 30px;
     margin-bottom: 30px;
 }
@@ -182,6 +234,7 @@ p .emphasis {
 }
 
 .top {
+    width: fit-content;
     transform: translateX(-100px);
     transition: all 100ms ease-in-out;
 }
@@ -192,6 +245,7 @@ p .emphasis {
 }
 
 .middle {
+    width: fit-content;
     transform: translateX(130px);
     transition: all 100ms ease-in-out;
 }
@@ -202,6 +256,7 @@ p .emphasis {
 }
 
 .bottom {
+    width: fit-content;
     font-style: italic;
     transform: translateX(12px);
     transition: all 100ms ease-in-out;
@@ -213,7 +268,8 @@ p .emphasis {
 }
 
 .social-icons {
-    font-size: 30px;
+    width: 100%;
+    font-size: 35px;
     text-align: center;
     line-height: 2;
     transition: all 200ms ease-in-out;
@@ -254,6 +310,7 @@ p .emphasis {
 }
 
 .project-title {
+    margin-top: 10px;
     font-size: 22px;
     font-weight: 600;
     color: var(--projects-primary-color);
@@ -311,7 +368,7 @@ p .emphasis {
         transform: none;
     }
     .masked-text {
-        font-size: 60px;
+        font-size: 50px;
     }
     
     .selfie {

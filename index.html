@@ -14,21 +14,111 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
-<body class="container">
-    <header>
-    <h1>Hi, my name is
-    <div class="masking-container">
-        <span class="masked-text">Alicia Buelow</span>
-    </h1>
-    
-    <h2>Junior Developer</h2>
-    </header>
-    <div class="index-navigation">
-        <a href="/about.html" title="About Alicia" class="link top">About Me</a>
-        <a href="/projects.html" title="Alicia's Projects" class="link middle">Projects</a>
-        <a href="/contact.html" title="Contact Alicia" class="link bottom pt-3">Contact</a>
-    </div>
-    </div>
+<body>
+<div class="container">
+    <section id="homepage">
+        <div class="homepage-parent">
+        <header>
+        <h1>Hi, my name is
+        <div class="masking-container">
+            <span class="masked-text">Alicia Buelow</span>
+        </h1>
+        
+        <h2>Junior Developer</h2>
+        </header>
+        <div class="index-navigation">
+            <a href="/#about" title="About Alicia" class="link top">About Me</a>
+            <a href="/#projects" title="Alicia's Projects" class="link middle">Projects</a>
+            <a href="/#contact" title="Contact Alicia" class="link bottom pt-1">Contact</a>
+        </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="about-title">
+        <strong class="about-theme">About</strong>
+        </div>
+        <div class="about-parent about-theme-bg">
+            <div class="about-me-section justify-content-center">
+            <div class="row">
+            
+                <div class="col">
+        <p class="about-text">
+            Born in <span class="emphasis">Toronto, Canada</span>, now based in <span class="emphasis">Perth, Western Australia</span>.
+            <br />
+            My background in social sciences and art informs my <span class="emphasis">simple</span> and <span class="emphasis">impactful</span> code and design.
+            <br />
+            I believe in <span class="emphasis">pixel-perfection</span>, <span class="emphasis">striking colour</span>, and <span class="emphasis">collaboration</span>.
+        <br />
+        Graduate of the <span class="emphasis">SheCodes Full-Stack Developer Bootcamp</span>.
+        <br />
+        Learning every day.
+        </p>
+        
+        </div>
+        <div class="col">
+            <img src="/images/profilepic.jfif" alt="Black and white selfie of woman" class="img-fluid selfie" title="Alicia Buelow, Junior Developer, in black and white">
+        </div>
+        </div>
+        </div>
+        </div>
+    </section>
+
+    <section id="projects">
+
+        <div class="projects-title">
+            <strong class="projects-theme">Projects</strong>
+        </div>
+        <div class="projects-parent projects-theme-bg">
+            <div class="projects-section justify-content-center">
+                <div class="projects-grid">
+        <div class="row">
+        <div class="col-lg-4">
+        <div class="project-container">
+        <img src="/images/alicia-weatherapp.vercel.app_.png" class="project-preview-img" alt="Preview of Weather App webpage" width="300px">
+        <div class="project-title">Weather App</div>
+        <div class="project-description">I designed and built a straight-forward weather application utilizing HTML, CSS, Javascript and integrated API.</div>
+        <button class="project-button"><a href="https://alicia-weatherapp.vercel.app/" target="_blank">Launch Weather App</a></button>
+        </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="project-container">
+        <img src="/images/alicia-world-clock-project.vercel.app_.png" class="project-preview-img" alt="Preview of World Clock webpage" width="300px">
+        <div class="project-title">World Clock</div>
+        <div class="project-description">Designed and built by myself, this World Clock utilizes integrated API, HTML, CSS, and Javascript.</div>
+        <button class="project-button"><a href="https://alicia-world-clock-project.vercel.app/" target="_blank">Launch World Clock</a></button>
+        </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="project-container">
+        <img src="/images/ai-travel-itinerary-generator-one.vercel.app_ (1).png" class="project-preview-img" alt="Preview of Travel Tips webpage" width="300px">
+        <div class="project-title">AI Travel Tips Generator</div>
+        <div class="project-description">This generator was an exercise in HTML, CSS, JavaScript, plugins, and AI</div>
+        <button class="project-button"><a href="https://ai-travel-itinerary-generator-one.vercel.app/" target="_blank">Launch Travel Tips</a></button>
+        </div>
+            </div>
+        </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="contact-title">
+            <strong class="contact-theme">Contact</strong>
+        </div>
+        <div class="contact-parent contact-theme-bg">
+            <div class="contact-section justify-content-center">
+            <div class="contact-paragraph">
+            Let's build something
+            </div>
+            <a href="mailto:alicia@buelow.com.au" class="contact-theme" id="email">alicia@buelow.com.au</a>
+
+            </div>
+        </div>
+    </section>
+
     <footer>
         <div class="social-icons d-flex justify-content-center fixed-bottom">
                 <div class="social-icon"><a href="https://www.linkedin.com/in/alicia-buelow/" target="_blank" class="fa-brands fa-square-linkedin" title="Alicia's LinkedIn"></a></div>
@@ -36,5 +126,6 @@
                 <div class="social-icon"><a href="https://instagram.com/leeshamundo" target="_blank" class="fa-brands fa-square-instagram" title="Alicia's Instagram"></a></div>
         </div>
     </footer>
+</div>
 </body>
 </html>

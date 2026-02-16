@@ -117,6 +117,10 @@ p {
     text-transform: lowercase;
 }
 
+.nav-link:hover {
+    opacity: 0.7;
+}
+
 .active {
     font-style: italic;
 }

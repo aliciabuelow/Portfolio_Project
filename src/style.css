@@ -112,6 +112,11 @@ p {
     color: var(--contact-primary-color);
 }
 
+.nav-link {
+    font-family: 'Inter', sans-serif;
+    text-transform: lowercase;
+}
+
 .active {
     font-style: italic;
 }

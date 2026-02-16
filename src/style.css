@@ -158,7 +158,7 @@ p .emphasis {
     font-weight: 700;
 }
 
-.navigation-links {
+.index-navigation {
     margin-top: 60px;
     text-align: center;
     
@@ -178,7 +178,7 @@ p .emphasis {
 }
 
 .top {
-    transform: translateX(-120px);
+    transform: translateX(-100px);
     transition: all 100ms ease-in-out;
 }
 
@@ -226,7 +226,7 @@ p .emphasis {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 576px) {
     h1 {
         font-size: 30px;
         line-height: 1;
@@ -238,6 +238,10 @@ p .emphasis {
         font-size: 15px;
     }
     
+    .nav-link {
+        font-size: 11px;
+    }
+
     .link {
         font-size: 70px;
         line-height: 0.7;

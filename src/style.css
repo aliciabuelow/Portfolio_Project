@@ -4,7 +4,7 @@
     --about-secondary-color: #fffdf3;
     --about-accent-color: #d8156a;
     --projects-primary-color: #4a3491;
-    --projects-secondary-color: #f2fdff;
+    --projects-secondary-color: #def1f4;
     --projects-accent-color: #20b2b7;
     --contact-primary-color: #c90505;
     --contact-secondary-color: #fef9fc;
@@ -229,6 +229,60 @@ p .emphasis {
     opacity: 0.7;
 }
 
+.projects-grid {
+    margin-bottom: 75px;
+    gap: 10px;
+}
+
+.project-container {
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    width: 400px;
+    height: 500px;
+    text-align: center;
+}
+
+.project-preview-img {
+    border-radius: 10px;
+    transition: all 200ms ease-in-out;
+}
+
+.project-preview-img:hover {
+    border-left: 10px solid var(--projects-accent-color);
+}
+
+.project-title {
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--projects-primary-color);
+}
+
+.project-description {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.project-button {
+    margin: 15px;
+    padding: 7px 12px;
+    border: none;
+    border-radius: 20px;
+    background-color: var(--projects-primary-color);
+    transition: all 150ms ease-in-out;
+}
+
+.project-button a {
+    font-family: 'Inter', sans-serif;
+    color: #fff;
+    font-size: 14px;
+}
+
+.project-button:hover {
+    background-color: var(--projects-accent-color);
+    transform: scale(1.05);
+}
 
 @media (max-width: 576px) {
     h1 {

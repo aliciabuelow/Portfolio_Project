@@ -1,14 +1,14 @@
 
 :root {
-    --about-primary-color: #016ee2;
+    --about-primary-color: #0264cc;
     --about-secondary-color: #fffdf3;
     --about-accent-color: #d8156a;
     --projects-primary-color: #4a3491;
     --projects-secondary-color: #f2fdff;
-    --projects-accent-color: #4bc6ca;
+    --projects-accent-color: #20b2b7;
     --contact-primary-color: #c90505;
     --contact-secondary-color: #fef9fc;
-    --contact-accent-color: #f89d1e;
+    --contact-accent-color: #fa9508;
 }
 
 body {

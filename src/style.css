@@ -7,15 +7,6 @@
     --contact-primary-color: #c90505;
     --contact-secondary-color: #fef9fc;
 }
-#email {
-    font-size: 35px;
-    font-weight: 700;
-    transition: all 150ms ease-in-out;
-}
-
-#email:hover {
-    opacity: 0.7;
-}
 
 body {
     max-width: 95%;;
@@ -126,7 +117,22 @@ p {
     font-weight: 200;
 }
 
+#email {
+    display: block;
+    margin: 5px auto;
+    text-decoration: none;
+    font-size: 100px;
+    font-weight: 100;
+    line-height: 70px;
+    text-transform: lowercase;
+    cursor: crosshair;
+    transition: all 150ms ease-in-out;
+}
 
+#email:hover {
+    letter-spacing: 5px;
+    font-style: italic;
+}
 
 .selfie {
     width: 300px;
@@ -170,7 +176,7 @@ p .emphasis {
     font-size: 100px;
     font-weight: 100;
     line-height: 70px;
-    text-transform: uppercase;
+    text-transform: lowercase;
     cursor: crosshair;
 }
 
@@ -196,7 +202,7 @@ p .emphasis {
 
 .bottom {
     font-style: italic;
-    transform: translateX(25px);
+    transform: translateX(12px);
     transition: all 100ms ease-in-out;
 }
 
@@ -261,7 +267,7 @@ p .emphasis {
     }
     p {
         margin: 0 auto 20px auto;
-        text-align: center;
+        text-align: start;
         font-size: 12px
     }
     p .emphasis {

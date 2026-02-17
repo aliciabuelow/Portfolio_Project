@@ -1,14 +1,11 @@
 
 :root {
-    --about-primary-color: #0264cc;
-    --about-secondary-color: #f7f4e3;
-    --about-accent-color: #d8156a;
-    --projects-primary-color: #4a3491;
-    --projects-secondary-color: #def1f4;
-    --projects-accent-color: #20b2b7;
-    --contact-primary-color: #c90505;
-    --contact-secondary-color: #f7e2ee;
-    --contact-accent-color: #fa9508;
+    --about-primary-color: #31572c;
+    --about-secondary-color: #c0d887;
+    --projects-primary-color: #005e8d;
+    --projects-secondary-color: #8bd3f4;
+    --contact-primary-color: #d45f00;
+    --contact-secondary-color: #fedb83;
 }
 
 body {
@@ -82,138 +79,6 @@ p {
     }
     }
 
-#about {
-    margin: 400px 0;
-    width: 100%;
-}
-
-.about-parent {
-    border-radius: 30px;
-    padding: 20px;
-    margin-top: 0;
-}
-.about-title {
-    position: relative;
-    top: 26px;
-    left: 50px;
-}
-
-.about-me-section {
-    margin: 0 auto;
-    padding-bottom: 30px;
-    
-}
-
-.about-theme-bg {
-    background-color: var(--about-secondary-color);
-    color: var(--about-primary-color)
-}
-
-.about-theme {
-    color: var(--about-primary-color);
-}
-
-#projects {
-    margin: 0 0 400px 0;
-    width: 100%;
-}
-
-.projects-parent {
-    border-radius: 30px;
-    padding: 20px;
-    margin-top: 0;
-}
-
-.projects-title {
-    position: relative;
-    top: 26px;
-    left: 50px;
-}
-
-.projects-theme {
-    color: var(--projects-primary-color);
-}
-
-.projects-theme-bg {
-    background-color: var(--projects-secondary-color);
-}
-
-#contact {
-    margin: 0 0 200px 0;
-    width: 100%;
-}
-
-.contact-parent {
-    width: 550px;
-    max-width: 90%;
-    margin: 0 auto;
-    padding: 20px;
-    border-radius: 30px;
-}
-
-.contact-title {
-    position: relative;
-    text-align: center;
-    top: 26px;
-}
-
-.contact-theme-bg {
-    background-color: var(--contact-secondary-color);
-}
-
-.contact-theme {
-    color: var(--contact-primary-color);
-}
-
-.nav-link {
-    font-family: 'Inter', sans-serif;
-    text-transform: lowercase;
-}
-
-.nav-link:hover {
-    opacity: 0.7;
-}
-
-.active {
-    font-style: italic;
-}
-
-.contact-paragraph {
-    color: var(--contact-primary-color);
-    text-align: center;
-    font-size: 25px;
-    font-weight: 200;
-}
-
-#email {
-    display: block;
-    margin: 5px auto;
-    text-decoration: none;
-    font-size: 50px;
-    font-weight: 100;
-    line-height: 70px;
-    text-transform: lowercase;
-    cursor: crosshair;
-    transition: all 150ms ease-in-out;
-}
-
-#email:hover {
-    font-style: italic;
-}
-
-.selfie {
-    width: 300px;
-    margin-top: 80px;
-    border-radius: 30px;
-    margin-bottom: 30px;
-}
-
-p .emphasis {
-    
-    font-size: 15px;
-    font-weight: 700;
-}
-
 .index-navigation {
     margin-top: 60px;
     text-align: center;
@@ -267,22 +132,58 @@ p .emphasis {
     font-style: normal;
 }
 
-.social-icons {
+#about {
+    margin: 400px 0;
     width: 100%;
-    font-size: 35px;
-    text-align: center;
-    line-height: 2;
-    transition: all 200ms ease-in-out;
 }
 
-.social-icon a {
-    text-decoration: none;
-    margin: 20px;
-    
+.about-parent {
+    border-radius: 30px;
+    padding: 20px;
+    margin-top: 0;
+}
+.about-title {
+    position: relative;
+    top: 26px;
+    left: 50px;
 }
 
-.social-icon:hover {
-    opacity: 0.7;
+.about-text {
+    margin-top: 10px;
+    max-width: 90%;
+}
+
+p .emphasis {
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.selfie {
+    width: 300px;
+    margin-top: 20px;
+    border-radius: 30px;
+}
+
+.about-theme-bg {
+    background-color: var(--about-secondary-color);
+    color: var(--about-primary-color)
+}
+
+.about-theme {
+    color: var(--about-primary-color);
+}
+
+#projects {
+    margin: 0 0 400px 0;
+    width: 100%;
+}
+
+.projects-theme {
+    color: var(--projects-primary-color);
+}
+
+.projects-theme-bg {
+    background-color: var(--projects-secondary-color);
 }
 
 .projects-grid {
@@ -290,12 +191,24 @@ p .emphasis {
     gap: 10px;
 }
 
+.projects-title {
+    position: relative;
+    top: 26px;
+    left: 50px;
+}
+
+.projects-parent {
+    border-radius: 30px;
+    padding: 20px;
+    margin-top: 0;
+}
+
 .project-container {
     margin: 20px auto;
     background-color: #fff;
     padding: 20px;
     border-radius: 15px;
-    width: 400px;
+    max-width: 400px;
     height: 500px;
     text-align: center;
 }
@@ -310,9 +223,8 @@ p .emphasis {
 }
 
 .project-title {
-    margin-top: 10px;
     font-size: 22px;
-    font-weight: 600;
+    margin-top: 10px;
     color: var(--projects-primary-color);
 }
 
@@ -339,6 +251,74 @@ p .emphasis {
 .project-button:hover {
     background-color: var(--projects-accent-color);
     transform: scale(1.05);
+}
+
+#contact {
+    margin: 0 0 200px 0;
+    width: 100%;
+}
+
+.contact-theme-bg {
+    background-color: var(--contact-secondary-color);
+}
+
+.contact-theme {
+    color: var(--contact-primary-color);
+}
+
+.contact-parent {
+    width: 550px;
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+.contact-title {
+    position: relative;
+    text-align: center;
+    top: 26px;
+}
+
+.contact-paragraph {
+    color: var(--contact-primary-color);
+    text-align: center;
+    font-size: 25px;
+    font-weight: 200;
+}
+
+#email {
+    text-align: center;
+    margin: 5px auto;
+    text-decoration: none;
+    font-size: 50px;
+    font-weight: 100;
+    line-height: 70px;
+    text-transform: lowercase;
+    cursor: crosshair;
+    transition: all 150ms ease-in-out;
+}
+
+#email:hover {
+    font-style: italic;
+}
+
+.social-icons {
+    width: 100%;
+    font-size: 35px;
+    text-align: center;
+    line-height: 2;
+    transition: all 200ms ease-in-out;
+}
+
+.social-icon a {
+    text-decoration: none;
+    margin: 20px;
+    
+}
+
+.social-icon:hover {
+    opacity: 0.7;
 }
 
 @media (max-width: 576px) {
@@ -371,16 +351,6 @@ p .emphasis {
         font-size: 50px;
     }
     
-    .selfie {
-        position: relative;
-        left: 10px;
-        margin: 0 auto;
-        margin-bottom: 40px;
-    }
-
-    #email {
-        font-size: 25px;
-    }
     p {
         margin: 0 auto 20px auto;
         text-align: start;
@@ -389,4 +359,20 @@ p .emphasis {
     p .emphasis {
         font-size: 12px;
     }
+
+    .selfie {
+        position: relative;
+        left: 10px;
+        margin: 0 auto;
+        margin-bottom: 40px;
+    }
+
+    .projects-title {
+        left: 15px;
+    }
+
+    #email {
+        font-size: 25px;
+    }
+
 }

@@ -12,6 +12,7 @@ body {
     width: 100%;
     margin: 0;
     padding: 0px;
+    background-color: #f4f2ed;
 }
 
 a {
@@ -138,14 +139,19 @@ p {
 }
 
 .about-parent {
+    margin: 0 auto;
     border-radius: 30px;
     padding: 20px;
-    margin-top: 0;
 }
+
 .about-title {
     position: relative;
     top: 26px;
     left: 50px;
+}
+
+.about-me-section {
+    padding: 50px;
 }
 
 .about-text {
@@ -159,8 +165,10 @@ p .emphasis {
 }
 
 .selfie {
+    display: block;
     width: 300px;
-    margin-top: 20px;
+    min-width: 100px;
+    margin: 10px auto;
     border-radius: 30px;
 }
 
@@ -189,6 +197,7 @@ p .emphasis {
 .projects-grid {
     margin-bottom: 75px;
     gap: 10px;
+    padding: 30px;
 }
 
 .projects-title {
@@ -274,6 +283,10 @@ p .emphasis {
     border-radius: 30px;
 }
 
+.contact-section {
+    padding: 30px;
+}
+
 .contact-title {
     position: relative;
     text-align: center;
@@ -353,7 +366,7 @@ p .emphasis {
     
     p {
         margin: 0 auto 20px auto;
-        text-align: start;
+        text-align: center;
         font-size: 12px
     }
     p .emphasis {
@@ -361,8 +374,7 @@ p .emphasis {
     }
 
     .selfie {
-        position: relative;
-        left: 10px;
+        display: block;
         margin: 0 auto;
         margin-bottom: 40px;
     }

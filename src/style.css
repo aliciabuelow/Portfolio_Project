@@ -255,9 +255,7 @@ p .emphasis {
 }
 
 .project-button:hover {
-    background-color: var(--projects-accent-color);
-    transform: scale(1.05);
-}
+  background-color: var(--projects-secondary-color);
 
 #contact {
     margin: 0 0 200px 0;

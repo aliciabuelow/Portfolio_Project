@@ -17,7 +17,7 @@ body {
 
 a {
     text-decoration: none;
-    cursor: crosshair;
+    cursor: pointer;
     color: black;
 }
 
@@ -96,7 +96,7 @@ p {
     font-weight: 100;
     line-height: 75px;
     text-transform: lowercase;
-    cursor: crosshair;
+    cursor: pointer;
 }
 
 .top {
@@ -255,7 +255,8 @@ p .emphasis {
 }
 
 .project-button:hover {
-  background-color: var(--projects-secondary-color);
+    opacity: 0.8;
+}
 
 #contact {
     margin: 0 0 200px 0;
@@ -303,7 +304,7 @@ p .emphasis {
     font-weight: 100;
     line-height: 70px;
     text-transform: lowercase;
-    cursor: crosshair;
+    cursor: pointer;
     transition: all 150ms ease-in-out;
 }
 

@@ -92,9 +92,9 @@ p {
     margin: 10px auto;
     text-decoration: none;
     color: #373737;
-    font-size: 100px;
+    font-size: 60px;
     font-weight: 100;
-    line-height: 75px;
+    line-height: 50px;
     text-transform: lowercase;
     cursor: pointer;
 }
@@ -102,35 +102,32 @@ p {
 .top {
     width: fit-content;
     transform: translateX(-100px);
-    transition: all 100ms ease-in-out;
+    transition: all 200ms ease-in-out;
 }
 
 .top:hover {
-    
-    font-style: italic;
+    font-size: 70px;
 }
 
 .middle {
     width: fit-content;
     transform: translateX(130px);
-    transition: all 100ms ease-in-out;
+    transition: all 200ms ease-in-out;
 }
 
 .middle:hover {
-    
-    font-style: italic;
+    font-size: 72px;
 }
 
 .bottom {
     width: fit-content;
     font-style: italic;
     transform: translateX(12px);
-    transition: all 100ms ease-in-out;
+    transition: all 200ms ease-in-out;
 }
 
 .bottom:hover {
-    
-    font-style: normal;
+    font-size: 80px;
 }
 
 #about {
@@ -297,7 +294,7 @@ p .emphasis {
     font-weight: 200;
 }
 
-#email {
+.email a {
     text-align: center;
     margin: 5px auto;
     text-decoration: none;
@@ -308,11 +305,22 @@ p .emphasis {
     cursor: pointer;
 }
 
+.email a:hover {
+    opacity: 0.7;
+}
+
 .resume-link {
     background-color: #fff;
     padding: 10px 15px;
     border-radius: 25px;
+}
+
+.resume a {
     transition: all 150ms ease-in-out;
+}
+
+.resume a:hover {
+    opacity: 0.7;
 }
 
 .social-icons {

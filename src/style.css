@@ -281,6 +281,7 @@ p .emphasis {
 
 .contact-section {
     padding: 30px;
+    text-align: center;
 }
 
 .contact-title {
@@ -300,16 +301,18 @@ p .emphasis {
     text-align: center;
     margin: 5px auto;
     text-decoration: none;
-    font-size: 50px;
-    font-weight: 100;
+    font-size: 30px;
+    font-weight: 500;
     line-height: 70px;
     text-transform: lowercase;
     cursor: pointer;
-    transition: all 150ms ease-in-out;
 }
 
-#email:hover {
-    font-style: italic;
+.resume-link {
+    background-color: #fff;
+    padding: 10px 15px;
+    border-radius: 25px;
+    transition: all 150ms ease-in-out;
 }
 
 .social-icons {
